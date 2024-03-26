@@ -13,12 +13,15 @@ body {
 h1 {
   font-size: 5rem;
 }
+
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 3rem;
 }
+
 h4 {
   font-size: 2rem;
 }
@@ -94,8 +97,6 @@ main {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  justify-content: center;
-  align-items: center;
   gap: 4.5rem;
 }
 
@@ -235,6 +236,7 @@ footer img {
 
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
   }
 
   .card-header p {
@@ -245,12 +247,17 @@ footer img {
   header {
     display: flex;
     flex-direction: column;
+    padding: 4rem;
     background-image: linear-gradient(
         330deg,
         rgba(0 0 0 / 0) 70%,
         var(--primary-color) calc(70% + 4px)
       ),
       linear-gradient(331deg, rgba(0 0 0 / 0) 69%, rgb(0 0 0) calc(75% + 2px));
+  }
+
+  main {
+    padding: 4rem;
   }
 
   main h2 {
@@ -296,6 +303,10 @@ footer img {
   footer {
     grid-template-columns: 1fr;
     padding: 0;
+  }
+
+  footer > div {
+    padding: 3rem;
   }
 
   footer h3 {
@@ -362,13 +373,16 @@ footer img {
     width: 24px;
   }
 
+  footer > div {
+    padding: 1rem;
+  }
+
   footer h3 {
     font-size: 3rem;
   }
 
   footer > div > p:first-of-type {
     font-size: 2rem;
-    padding: 2rem;
   }
 
   .contact-icons a img {
